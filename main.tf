@@ -12,7 +12,7 @@ resource "azurerm_resource_group" "rg" {
   location = var.location
 }
 
-resource "azurerm_resource_group2" "rg" {
+resource "azurerm_resource_group" "rg2" {
   name     = "two"
   location = var.location
 }
