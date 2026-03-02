@@ -12,6 +12,11 @@ resource "azurerm_resource_group" "rg" {
   location = var.location
 }
 
+resource "azurerm_resource_group" "rg" {
+  name     = "two"
+  location = var.location
+}
+
 data "azurerm_resource_group" "rg" {
   name       = azurerm_resource_group.rg.name
   depends_on = [azurerm_resource_group.rg]
